@@ -1,0 +1,44 @@
+extends ./layouts/index
+//- En Pug no colocamos las etiquetas como en html, sino que colocamos el nombre de la etiqueta + el contenido. Ej: h1 Hola Mundo
+
+//- Como mostrar un valor que le pasé a la vista
+//- Si luego del nombre de la etiqueta dejo un espacio, entonces se tomará como texto, pero si se coloca un signo de igual, se esperará una variable. El igual no puede llevar espacio luego de la etiqueta o lo tomará como texto también.
+//- p= viajes
+
+//- También podemos indicar que se espera una variable con #{}
+//- p #{viajes}
+
+//- Agregamos el contenido al bloque para que se muestre el layout
+block contenido
+  main.container.mt-5
+    .row
+      .col-md-5
+        img(src="img/nosotros.jpg", alt="Imagen sobre nosotros", class="img-fluid")
+      .col-md-7
+        h1 #{pagina}
+        blockquote Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias quia quos ipsam nisi voluptates ipsa, iusto tempore! Fugiat explicabo quidem accusantium est sed vel at voluptatibus eos sit tempore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias quia quos ipsam nisi voluptates ipsa, iusto tempore! Fugiat explicabo quidem accusantium est sed vel at voluptatibus.
+
+        p Cum fugit explicabo nulla autem architecto suscipit quisquam sunt eaque vel sed, nobis iure commodi unde aut numquam perferendis quidem dignissimos, maiores sint ad facere error quasi molestiae. Illo, officia? Quidem dignissimos, maiores sint ad facere error quasi molestiae. Illo, officia?
+
+        p Ipsum exercitationem molestias, culpa aliquid corrupti vero pariatur veritatis quam praesentium nam quod est deserunt. Laboriosam cumque nemo odit nostrum dolorum, sequi modi cupiditate ducimus, rem illum magnam minus. Eligendi! Laboriosam cumque nemo odit nostrum dolorum, sequi modi cupiditate ducimus, rem illum magnam minus. Eligendi!
+
+  .listado-iconos
+    .container.mt-5.py-5.text-center
+      .row
+        .col-md-4
+          img(src="img/icono_seguridad.svg", alt="icono seguridad" class="img-fluid mb-4")
+          h2.mb-4 Seguridad
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus perferendis aut alias corrupti, ipsa mollitia iure facere quas omnis, sed harum eum laboriosam modi?
+
+        .col-md-4
+          img(src="img/icono_destinos.svg", alt="icono destinos" class="img-fluid mb-4")
+          h2.mb-4 Mejores Destinos
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus perferendis aut alias corrupti, ipsa mollitia iure facere quas omnis, sed harum eum laboriosam modi?
+
+        .col-md-4
+          img(src="img/icono_precios.svg", alt="icono precios" class="img-fluid mb-4")
+          h2.mb-4 Los Mejores Precios
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus perferendis aut alias corrupti, ipsa mollitia iure facere quas omnis, sed harum eum laboriosam modi?
+
+  //- Asi agregaríamos una imagen
+  //- img(src="img/cupon.jpg")

@@ -1,0 +1,21 @@
+//- Para incluir esta información en otro archivo puedo hacer uso de include en el archivo en el que deseo usar esta porción de código
+
+//- h1 Agencia de Viajes
+//- p Desde el Header
+
+header
+  //- Puedo crear divs con una clase de tres maneras:
+  div(class="navegacion")
+    .container
+      .row.justify-content-center.justify-content-md-between.align-items-center.py-4
+        .col-md-4.col-6
+          a(href="/")
+            img(src="/img/logo.svg", alt="")
+        .col-md-8
+          nav.mt-5.mt-md-0.nav.justify-content-center.justify-content-md-end
+            a.nav-link(href="/nosotros", class="ms-3") Nosotros
+            a.nav-link(href="/viajes", class="ms-3") Viajes
+            a.nav-link(href="/testimoniales", class="ms-3") Testimoniales
+  //- div.navegacion
+  //- .navegacion
+

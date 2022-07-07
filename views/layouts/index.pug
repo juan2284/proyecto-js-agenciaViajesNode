@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- Agregar Bootstrap
+    link(rel="stylesheet", href="/css/bootstrap.css")
+    //- Agregar Estilos Propios
+    link(rel="stylesheet", href="/css/style.css")
+    //- Agregar CDN de Google Fonts
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Staatliches&display=swap")
+    //- Aqui le estamos pasando también la variable que definí en la ruta para el título de la página
+    title #{nombreSitio} | #{pagina}
+  body(class=clase)
+
+    //- Para agregar el header
+    include header
+
+    block slider
+    block contenido
+    include footer
+
+    script(src="/js/bootstrap.js")

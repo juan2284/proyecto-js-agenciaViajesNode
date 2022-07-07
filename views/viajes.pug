@@ -1,0 +1,8 @@
+extends ./layouts/index
+
+block contenido
+  h1(class="mt-5 text-center") #{pagina}
+  main.container
+    
+    //- Agregamos en un archivo layout el código que iba aqui para poder reutilizarlo y hacerlo mas fácil de mantener
+    include ./layouts/bloque_viajes
